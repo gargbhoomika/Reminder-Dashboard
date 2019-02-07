@@ -14,6 +14,11 @@
 
 </head>
 <body>
+<% response.setHeader("Cache-Control","no-cache,no-store,must-revalidate");
+response.setHeader("Pragma","no-cache");
+response.setHeader("Expires","0");
+if(session.getAttribute("email")==null){
+	response.sendRedirect("index.jsp");}  %>
 <nav class="navbar navbar-default bg-dark justify-content-between">
   <a class="navbar-brand" style="color: white;">Remind Me</a>
   <a class="nav-item" style="color: white;">
