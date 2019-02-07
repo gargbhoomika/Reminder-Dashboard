@@ -77,8 +77,5 @@ background-color: black;
 <form action="del.jsp">
 <input type="submit" value="Delete Reminder" id="submit"><br>
 </form><br>
-<form action="modify.jsp">
-<input type="submit" value="Modify Reminder" id="submit"><br>
-</form>
 </body>
 </html>

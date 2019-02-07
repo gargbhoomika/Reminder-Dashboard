@@ -29,9 +29,6 @@
 <form action="del.jsp" style="margin-botton: 10px;">
 <input type="submit" value="Delete Reminder" id="submit"><br>
 </form><br>
-<form action="modify.jsp" style="margin-botton: 10px;">
-<input type="submit" value="Modify Reminder" id="submit"><br>
-</form>
 <form action="showreminder.jsp" style="margin-top: 20px;">
 <input type="submit" value="Show Reminder" id="submit"><br>
 </form>
