@@ -23,7 +23,6 @@ public class delete extends HttpServlet
 		if(dao.delete(email, time, date))
 		{
 			System.out.println("ENtered dao delete true");
-			session.setAttribute("email", email);
 			response.sendRedirect("showreminder.jsp");
 		}
 	}

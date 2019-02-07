@@ -23,7 +23,7 @@ public class sign extends HttpServlet{
 		if(dao.fill(name,email,phone,pass))
 		{
 			HttpSession session = request.getSession();
-			session.setAttribute("useremail", email);
+			session.setAttribute("email", email);
 			session.setAttribute("password", pass);
 			response.sendRedirect("index.jsp");
 		}

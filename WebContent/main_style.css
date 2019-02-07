@@ -1,0 +1,52 @@
+@CHARSET "ISO-8859-1";
+body
+{
+ 	width:100%;
+  	position: relative;
+	height: 100%;
+	background-image: url(bgimg.jpg);  
+	background-size: cover;
+	background-position: center;
+   background-repeat: no-repeat;
+   text-align: center;
+}
+input
+{
+	height: 50px;
+	width:50%;
+	border-radius: 20px;
+	font-size:110%;
+	text-align:center;
+}
+
+#submit
+{
+	background-color: black;
+	color:white;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+#submit:hover
+{
+	transform: scale(1.05);
+}
+
+a
+{
+	color:black;
+	font-size: 110%;
+	 text-decoration-line: none;
+	 text-align:center;
+	 font-weight: 600;
+}
+
+a:hover
+{
+	text-decoration-line: underline;
+}
+.indexform
+{
+	margin-top: 10%;
+	text-align:center;
+}

@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="style.css" rel="stylesheet">
-<title>Login Page</title>
+<title>SignUp Page</title>
 </head>
 <body>
 <div class="bg-image"></div>

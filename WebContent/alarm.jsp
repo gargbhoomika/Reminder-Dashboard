@@ -4,35 +4,37 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<link href="style.css" rel="stylesheet">
+<link href="main_style.css" rel="stylesheet">
 <title>Reminders</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-<% String email = session.getAttribute("email").toString();
-session.setAttribute("email",email);
-%>
-<div class="bg-image"></div>
-
-<div class="bg-text">
-<form action="add.jsp">
-<input type="submit" value="Add Reminder" id="submit" onclick="f1()"><br>
+<nav class="navbar navbar-default bg-dark justify-content-between">
+  <a class="navbar-brand" style="color: white;">Remind Me</a>
+  <a class="nav-item" style="color: white; display: inline">
+  ${email}
+  <form action="logout">
+   <button type="submit" value="Logout" style="background:black; color: white;border-color: #0000;
+  border-style: solid;cursor: pointer;  display: inline">Logout</button>
+   </form>
+  </a>
+</nav>
+<div style="text-align: center;">
+<form action="add.jsp" style="margin-botton: 10px; margin-top: 10%;">
+<input type="submit" value="Add Reminder" id="submit"><br>
 </form><br>
-<form action="del.jsp">
-<input type="submit" value="Delete Reminder" id="submit" onclick="f2()"><br>
+<form action="del.jsp" style="margin-botton: 10px;">
+<input type="submit" value="Delete Reminder" id="submit"><br>
 </form><br>
-<form action="modify.jsp">
-<input type="submit" value="Modify Reminder" id="submit" onclick="f3()"><br>
+<form action="modify.jsp" style="margin-botton: 10px;">
+<input type="submit" value="Modify Reminder" id="submit"><br>
 </form>
-<div id="addr"></div>
+<form action="showreminder.jsp" style="margin-top: 20px;">
+<input type="submit" value="Show Reminder" id="submit"><br>
+</form>
 </div>
-
 </body>
-<script>
-function f1(){
-    document.getElementById("addr").innerHTML='<object type="text/html" data="add.jsp" ></object>';}
-function f2(){
-    document.getElementById("addr").innerHTML='<object type="text/html" data="del.jsp" ></object>';}
-function f3(){
-    document.getElementById("addr").innerHTML='<object type="text/html" data="modify.jsp" ></object>';}
-</script>
 </html>
